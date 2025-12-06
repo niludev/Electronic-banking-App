@@ -30,7 +30,7 @@ Users can register, log in, create cards, and perform different types of money t
 
 Every action—successful or failed—is recorded in the **transactions** table.
 
----
+
 
 ## Project Goals
 
@@ -41,7 +41,7 @@ Every action—successful or failed—is recorded in the **transactions** table.
 - Logging real-world banking transaction details  
 - Writing clean, maintainable, testable Java code  
 
----
+
 
 ## Features
 
@@ -53,7 +53,7 @@ Every action—successful or failed—is recorded in the **transactions** table.
 - Logged-in session tracking  
 - Relation between user → cards
 
----
+
 
 ### Card Management
 | Feature | Description |
@@ -64,7 +64,7 @@ Every action—successful or failed—is recorded in the **transactions** table.
 | Show by bank | List cards for a specific bank |
 | Show all cards | Admin-like listing |
 
----
+
 
 ## Financial Operations
 
@@ -79,14 +79,14 @@ Rules:
 
 Failed cases are logged with reason.
 
----
+
 
 ### PAYA Single Transfer
 - Max allowed → **50,000,000**
 - Fee → **0.001 × amount**
 - Logs failures (insufficient balance, invalid amount)
 
----
+
 
 ### PAYA Batch Transfer
 - Multiple transactions (items) in a single operation  
@@ -96,7 +96,7 @@ Failed cases are logged with reason.
   - Additional items → **+1,200 each**
 - Logs every successful or failed transaction in the batch
 
----
+
 
 ### SATNA Transfer
 - Min amount → **50,000,000**
@@ -104,7 +104,7 @@ Failed cases are logged with reason.
 - Fee → **0.002 × amount**
 - Logs every transaction
 
----
+
 
 ## Transaction Logging
 
@@ -123,7 +123,7 @@ Fields logged include:
 
 This ensures a complete audit history.
 
----
+
 
 ## Architecture (N-Tier)
 
