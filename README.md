@@ -6,6 +6,18 @@ The application supports **user authentication**, **bank card management**, **mu
 
 ---
 
+## What I Learned:
+- Correct use of JDBC, PreparedStatement, ResultSet
+- How to design a clean multi-layer architecture
+- Writing reusable business logic
+- Designing and enforcing banking fee algorithms
+- Handling batch transactions with shared batch_id
+- Robust error handling & validation
+- Separation of concerns
+- Creating maintainable, scalable Java applications
+
+---
+
 ## Project Overview
 
 This project simulates a simplified real-world electronic banking platform.  
@@ -115,12 +127,17 @@ This ensures a complete audit history.
 
 ## Architecture (N-Tier)
 
-view/                → Console user interface
-service/             → Business logic layer
-repository/          → JDBC database layer
-models/              → Domain models + enums
-util/                → ApplicationContext & DB configuration
+- view/                → Console user interface
+- service/             → Business logic layer
+- repository/          → JDBC database layer
+- models/              → Domain models + enums
+- util/                → ApplicationContext & DB configuration
 
+
+## How to Run the Project
+
+- Database: docker compose up -d --build
+- app: javac Main.java
 
 
 
